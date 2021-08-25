@@ -1,0 +1,80 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+div#app {
+  background-color: rgb(140, 160, 180);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15vh;
+}
+
+aside h1 {
+  font-size: 40px;
+}
+
+aside h1 span {
+  color: rgb(226, 25, 25);
+}
+section {
+  width: 100%;
+  height: 85vh;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.fleet,
+.service,
+.issues {
+  height: 20vh;
+  margin: 0 1%;
+  padding: 4px 20px;
+  border: none;
+  font-size: 30px;
+  border-radius: 7px;
+  background-color: rgb(30, 50, 70);
+  color: rgb(240, 240, 240);
+}
+
+button:hover {
+  background-color: rgb(50, 70, 90);
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  form {
+    flex-direction: column;
+  }
+  .fleet,
+  .service,
+  .issues {
+    height: 10vh;
+    margin: 40px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  aside h1 {
+    font-size: 28px;
+  }
+}

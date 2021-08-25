@@ -24,9 +24,7 @@
 <script>
 export default {
   data() {
-    return {
-      chosenType: "",
-    };
+    return {};
   },
   methods: {
     saveData(e) {
@@ -39,65 +37,5 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-}
-div#app {
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(140, 160, 180);
-  display: flex;
-  flex-direction: column;
-  font-family: "Poppins", sans-serif;
-}
-
-aside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 15vh;
-}
-
-aside h1 {
-  font-size: 40px;
-}
-
-aside h1 span {
-  color: rgb(226, 25, 25);
-}
-section {
-  width: 100%;
-  height: 85vh;
-}
-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 85vh;
-}
-
-.fleet,
-.service,
-.repair,
-.issues {
-  height: 30%;
-  width: 15%;
-  margin: 0 1%;
-  border: none;
-  font-size: 30px;
-  border-radius: 7px;
-  background-color: rgb(30, 50, 70);
-  color: rgb(240, 240, 240);
-}
-
-button:hover {
-  background-color: rgb(50, 70, 90);
-  cursor: pointer;
-}
+@import "./styles/style.css";
 </style>
