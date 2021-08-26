@@ -3,20 +3,16 @@
   padding: 0px;
 }
 
-html {
-  width: 100%;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
 div#app {
   background-color: rgb(140, 160, 180);
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
-aside {
+div#app main aside {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,19 +20,19 @@ aside {
   height: 15vh;
 }
 
-aside h1 {
+div#app main aside h1 {
   font-size: 40px;
 }
 
-aside h1 span {
+div#app main aside h1 span {
   color: rgb(226, 25, 25);
 }
-section {
+div#app main section {
   width: 100%;
   height: 85vh;
 }
 
-form {
+div#app main section form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,9 +40,9 @@ form {
   height: 100vh;
 }
 
-.fleet,
-.service,
-.issues {
+div#app main section form .fleet,
+div#app main section form .service,
+div#app main section form .issues {
   height: 20vh;
   margin: 0 1%;
   padding: 4px 20px;
@@ -57,24 +53,24 @@ form {
   color: rgb(240, 240, 240);
 }
 
-button:hover {
+div#app main section form button:hover {
   background-color: rgb(50, 70, 90);
   cursor: pointer;
 }
 @media (max-width: 1024px) {
-  form {
+  div#app main section form {
     flex-direction: column;
   }
-  .fleet,
-  .service,
-  .issues {
+  div#app main section form .fleet,
+  div#app main section form .service,
+  div#app main section form .issues {
     height: 10vh;
     margin: 40px 0;
   }
 }
 
 @media (max-width: 600px) {
-  aside h1 {
+  div#app main aside h1 {
     font-size: 28px;
   }
 }
